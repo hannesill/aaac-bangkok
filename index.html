@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI as a Catalyst Bangkok</title>
+    <meta
+      name="description"
+      content="A Thai-language, half-day workshop on healthcare AI, local context, and community-led evaluation. October 19, 2026 at QSNCC in Bangkok."
+    >
+    <meta property="og:title" content="AI as a Catalyst Bangkok">
+    <meta
+      property="og:description"
+      content="A community-led healthcare AI workshop at Siriraj x MIT Hacking Medicine 2026. October 19 at QSNCC in Bangkok."
+    >
+    <meta property="og:type" content="website">
+    <link rel="icon" href="assets/logo-mit-white.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="particle-field" aria-hidden="true">
+      <canvas id="particle-canvas"></canvas>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="MIT Critical Data">
+        <img class="brand-logo" src="assets/logo-mit-white.svg" alt="MIT">
+        <span class="brand-text"><span>Critical</span><span>Data</span></span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#program">Program</a>
+        <a href="#people">Faculty</a>
+        <a href="#event">Event</a>
+      </nav>
+      <div class="nav-spacer" aria-hidden="true"></div>
+    </header>
+
+    <main id="top">
+      <section class="hero section-grid">
+        <div class="hero-noise" aria-hidden="true"></div>
+        <div class="hero-glow hero-glow-top" aria-hidden="true"></div>
+        <div class="hero-glow hero-glow-bottom" aria-hidden="true"></div>
+        <svg class="bangkok-lineart" viewBox="0 0 760 360" aria-hidden="true">
+          <g class="lineart-soft">
+            <path d="M24 286c80-17 139-12 211 8 70 20 133 17 209-7 83-27 167-20 292 18"></path>
+            <path d="M44 316c78-17 136-11 204 8 70 19 134 15 208-8 88-28 167-18 278 21"></path>
+          </g>
+          <g class="lineart-main">
+            <path d="M70 272V154h66v118M82 154v-29h42v29M91 125V93h24v32"></path>
+            <path d="M164 272V182h58v90M179 182v-31h29v31M185 151v-21h17v21"></path>
+            <path d="M247 272v-58h124v58M247 214l62-48 62 48M273 205l36-60 36 60"></path>
+            <path d="M292 272v-32h34v32"></path>
+            <path d="M407 272v-96h70v96M419 176l23-48 23 48M431 128l11-51 11 51M438 77l4-34 4 34"></path>
+            <path d="M511 272v-72h67v72M511 200l34-47 33 47M530 180l15-52 15 52M541 128l4-39 4 39"></path>
+            <path d="M613 272V133h70v139M627 133V95h42v38M641 95V56h14v39"></path>
+          </g>
+          <g class="lineart-detail">
+            <path d="M84 183h16m17 0h15M84 211h16m17 0h15M84 239h16m17 0h15"></path>
+            <path d="M177 208h14m18 0h14M177 235h14m18 0h14"></path>
+            <path d="M262 225h95M420 204h44M420 231h44M525 222h40M525 247h40"></path>
+            <path d="M629 163h16m22 0h16M629 195h16m22 0h16M629 227h16m22 0h16"></path>
+            <path d="M46 272h666"></path>
+          </g>
+        </svg>
+
+        <div class="hero-copy">
+          <div class="eyebrow"><span></span>MIT Critical Data presents</div>
+          <h1>
+            <span>AI as a</span>
+            <span>Catalyst</span>
+            <em>Bangkok</em>
+          </h1>
+          <p class="hero-kicker" data-block="Hero theme">Reimagining Healthcare Innovation</p>
+          <p class="hero-subtitle" data-block="Hero description">
+            A Thai-language workshop on healthcare AI, local context, and who gets to
+            evaluate the systems that shape care.
+          </p>
+          <div class="hero-meta" aria-label="Event details">
+            <span><i></i>October 19, 2026</span>
+            <span>QSNCC, Bangkok · Room 04AB</span>
+            <strong>Half-day workshop</strong>
+          </div>
+          <div class="hero-actions">
+            <a
+              class="button primary"
+              href="https://sirirajxmithackmed.com/2026-conference"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span>View official event</span>
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </a>
+            <a class="learn-link" href="#about">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M12 5v14"></path>
+                <path d="m19 12-7 7-7-7"></path>
+              </svg>
+              Learn about the workshop
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section about" data-container="About the workshop">
+        <div class="section-label">A working room</div>
+        <h2>
+          Patients, artists, clinicians, technologists, and community representatives
+          examining healthcare AI together.
+        </h2>
+        <div class="split">
+          <p class="lead" data-block="About lead">
+            AI as a Catalyst Bangkok treats people affected by healthcare systems as
+            co-designers, not an audience. The workshop asks what an AI system misses when
+            it travels across languages, cultures, and institutions.
+          </p>
+          <div class="copy-stack">
+            <p data-block="About format">
+              Participants work in small, mixed groups. Each table compares model responses,
+              names failure modes, and decides what local evidence and human judgment the
+              system still needs.
+            </p>
+            <p data-block="About ownership">
+              The day will run in Thai, with translation support for the visiting team. Local
+              facilitators will adapt the exercises and examples to the Thai context.
+            </p>
+          </div>
+        </div>
+
+        <div class="host-grid" aria-label="Event facts">
+          <div>
+            <span>Part of</span>
+            <strong>Siriraj x MIT Hacking Medicine 2026</strong>
+          </div>
+          <div>
+            <span>In collaboration with</span>
+            <strong>MIT Critical Data</strong>
+          </div>
+          <div>
+            <span>Working language</span>
+            <strong>Thai</strong>
+            <p>Translation support will connect the visiting and local teams.</p>
+          </div>
+          <div>
+            <span>Venue</span>
+            <strong>QSNCC · Room 04AB</strong>
+          </div>
+          <div>
+            <span>Planned room</span>
+            <strong>60 to 80 participants</strong>
+            <p>Round tables of six to eight, with one laptop per group.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section theme-section" data-container="Workshop questions">
+        <div class="section-label">Questions for the room</div>
+        <div class="theme-grid">
+          <article>
+            <span>01</span>
+            <h3>Whose knowledge counts?</h3>
+            <p>
+              Models learn from what was recorded and digitized. Participants will look for
+              the people, histories, and forms of knowledge left outside that record.
+            </p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>What changes in Thai?</h3>
+            <p>
+              Teams will compare similar prompts across Thai and English to see how language,
+              training data, and cultural assumptions change an answer.
+            </p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Problem or symptom?</h3>
+            <p>
+              Before proposing another tool, the room will ask whether it understands the
+              underlying clinical, social, and institutional problem.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="program" class="section program" data-container="Program">
+        <div class="section-label">The program</div>
+        <div class="program-header">
+          <h2>A panel, a hands-on LLM-a-thon, and a shared debrief.</h2>
+          <p data-block="Program status">
+            The organizers have confirmed a half-day format. Exact timing and the final room
+            schedule are still being coordinated with the main event.
+          </p>
+        </div>
+        <div class="day-grid">
+          <article class="day-card">
+            <div class="day-topline">Workshop day</div>
+            <h3>Monday, October 19</h3>
+            <p class="venue">QSNCC · Room 04AB · Bangkok</p>
+            <ol class="timeline phase-timeline">
+              <li>
+                <span class="phase-label">OPEN</span>
+                <span>Welcome, table introductions, and the questions guiding the room</span>
+              </li>
+              <li>
+                <span class="phase-label">PANEL</span>
+                <span>Opening discussion on AI, medicine, and local knowledge, moderated by Leo Celi</span>
+              </li>
+              <li>
+                <span class="phase-label">LAB</span>
+                <span>LLM-a-thon across models, prompts, user groups, and languages</span>
+              </li>
+              <li>
+                <span class="phase-label">REPORT</span>
+                <span>Table reflections on failure modes, risks, and practical safeguards</span>
+              </li>
+              <li>
+                <span class="phase-label">CLOSE</span>
+                <span>What participants want to test, change, or carry into future work</span>
+              </li>
+            </ol>
+          </article>
+          <article class="day-card social-card">
+            <div class="day-topline">How the room works</div>
+            <h3>Small tables, mixed perspectives</h3>
+            <p>
+              Groups of six to eight will work around round tables with a facilitator and at
+              least one laptop. Non-technical and community perspectives are part of the
+              evaluation, not an add-on after the technical work is finished.
+            </p>
+            <div class="small-note">Thai-led · hands-on · no real patient data</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section workshops" data-container="LLM-a-thon method">
+        <div class="section-label">Inside the LLM-a-thon</div>
+        <div class="workshop-grid">
+          <article>
+            <h3>Compare</h3>
+            <p>
+              Run the same healthcare scenario through several models, then compare what each
+              answer emphasizes, assumes, omits, or gets wrong.
+            </p>
+          </article>
+          <article>
+            <h3>Evaluate</h3>
+            <p>
+              Build criteria that matter to patients, caregivers, clinicians, learners, and
+              communities instead of relying on a single impression of quality.
+            </p>
+          </article>
+          <article>
+            <h3>Safeguard</h3>
+            <p>
+              Identify realistic uses, downstream risks, and the checks people need before a
+              model can support healthcare decisions.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="people" class="section people" data-container="Workshop faculty">
+        <div class="section-label">Workshop event faculty</div>
+        <h2>People shaping the Bangkok workshop.</h2>
+        <div class="people-grid faculty-grid">
+          <article class="person-card">
+            <img src="assets/leo-anthony-celi.jpg" alt="Leo Anthony Celi">
+            <h3>Leo Anthony Celi</h3>
+            <p>MIT Critical Data · Harvard Medical School</p>
+          </article>
+          <article class="person-card portrait-thanasak">
+            <div class="portrait-crop">
+              <img src="assets/thanasak-hoontrakul.jpeg" alt="Thanasak Hoontrakul">
+            </div>
+            <h3>Thanasak Hoontrakul</h3>
+            <p>MIT Hacking Medicine</p>
+          </article>
+          <article class="person-card">
+            <img src="assets/tiger-chaisutyakorn.jpeg" alt="Tiger Chaisutyakorn">
+            <h3>Tiger Chaisutyakorn</h3>
+            <p>MIT Critical Data · Clinical AI research</p>
+          </article>
+          <article class="person-card portrait-raffaele">
+            <img src="assets/raffaele-giancotti.jpeg" alt="Raffaele Giancotti">
+            <h3>Raffaele Giancotti</h3>
+            <p>MIT Critical Data · Clinical AI research</p>
+          </article>
+          <article class="person-card">
+            <img src="assets/hannes-ill-portrait.png" alt="Hannes Ill">
+            <h3>Hannes Ill</h3>
+            <p>MIT Critical Data · Clinical AI research</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="event" class="section apply" data-container="Official event details">
+        <div class="apply-inner">
+          <div>
+            <div class="section-label">Official event</div>
+            <h2>Part of the Siriraj x MIT Hacking Medicine 2026 program.</h2>
+            <p data-block="Official event context">
+              Workshops take place on October 19 at QSNCC. The main conference follows on
+              October 20 at Grande Centre Point Lumphini.
+            </p>
+          </div>
+          <div class="apply-card">
+            <span>Tickets and agenda</span>
+            <p>
+              Use the official event website for current ticket options, the full agenda, and
+              venue updates.
+            </p>
+            <a
+              class="button primary"
+              href="https://sirirajxmithackmed.com/2026-conference"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span>Open official event site</span>
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <a
+      class="floating-cta"
+      href="https://sirirajxmithackmed.com/2026-conference"
+      target="_blank"
+      rel="noreferrer"
+      aria-label="Open the official event website"
+    >
+      <span class="ping"></span>
+      <span>Official event</span>
+      <svg aria-hidden="true" viewBox="0 0 24 24">
+        <path d="M5 12h14"></path>
+        <path d="m12 5 7 7-7 7"></path>
+      </svg>
+    </a>
+
+    <footer class="footer">
+      <p>AI as a Catalyst Bangkok · October 19, 2026 · QSNCC</p>
+      <a href="#top">Back to top</a>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
