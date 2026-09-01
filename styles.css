@@ -741,6 +741,22 @@ main,
   font-weight: 650;
 }
 
+.venue-link {
+  text-decoration: underline;
+  text-decoration-color: rgba(245, 185, 66, 0.36);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.25em;
+  transition:
+    color 180ms ease,
+    text-decoration-color 180ms ease;
+}
+
+.venue-link:hover,
+.venue-link:focus-visible {
+  color: #fff;
+  text-decoration-color: var(--amber);
+}
+
 .timeline {
   display: grid;
   margin: 0;
@@ -791,7 +807,7 @@ main,
 
 .people-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 32px 20px;
   margin-top: 58px;
 }
