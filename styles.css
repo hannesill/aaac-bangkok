@@ -864,6 +864,15 @@ main,
   object-position: 50% 28%;
 }
 
+.portrait-wallis img,
+.portrait-narawitchz img {
+  object-position: 50% 28%;
+}
+
+.portrait-arnun img {
+  object-position: 50% 25%;
+}
+
 .portrait-thanasak img {
   object-position: 50% 24%;
 }
