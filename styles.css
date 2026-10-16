@@ -831,6 +831,10 @@ main,
     transform 700ms ease;
 }
 
+.portrait-mentor img {
+  object-position: 50% 25%;
+}
+
 .person-card:hover img,
 .person-card:focus-within img {
   border-color: var(--line-strong);
@@ -840,6 +844,7 @@ main,
 
 .person-card h3 {
   margin: 16px 0 4px;
+  overflow-wrap: anywhere;
   color: #fff;
   font-size: 16px;
   font-weight: 750;
